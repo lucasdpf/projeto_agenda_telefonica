@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Novo Contato</h1>
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required placeholder=""/>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="tel" id="telefone" autocomplete="tel"
+            pattern="^\d{3}\d{4,5}\d{4}$"  placeholder="Digite DD e o Numero"/>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <h2>Lista de Contatos</h2>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="contatos">
+                <!-- Linhas da tabela serão adicionadas aqui via JavaScript -->
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        </form>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
